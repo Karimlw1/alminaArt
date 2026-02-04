@@ -25,7 +25,6 @@ p {
     background-color: #f0f8ff61;
     padding: 5px;
     border-radius: 5px;
-        display: ruby;
 }
 i{
     font-weight: bold;
@@ -39,7 +38,7 @@ i{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 860px;
+        height: 970px;
         width: max-content;
         border:  solid 2px rgba(128, 128, 128, 0.322);
         margin-top: 10px;
@@ -54,12 +53,13 @@ i{
       }
 .container_logo{
     position: absolute;
-    left: 200px;
+    left: 14px;
     top: 14px;
 }
 .container_logo .logo{
-    width: 90px;
-    height: 90px;
+    width: 150px;
+    height: 150px;
+    border-radius: 40px;
 }
 strong  a{
     color: rgb(199 39 39);
@@ -90,12 +90,12 @@ strong a:hover{
         display: flex;
         flex-direction: row;
         border-bottom: none;
-        
+            margin: 40px;
       }
 
-.container img{
-    height: 150px;
-    width: 150px;
+.container2 img {
+    height: 100px;
+    width: 100px;
     border-radius: 30%;
     user-select: none;
     -webkit-user-drag: none;
@@ -153,9 +153,9 @@ h2{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-top: 15%;
+    margin-top: 90px;
     align-items: center;
-    gap: 30px;
+    gap: 70px;
 }
 .packet-img{
     width: 150px;
@@ -167,6 +167,12 @@ h2{
 .packet-img img{
     border-radius: 10px;
 }
+.bouquet b{
+    background-color: aliceblue;
+    padding: 5px;
+    border-radius: 10px;
+}
+
 
 @media (min-width: calc(200px * 6)) {
   .container {
