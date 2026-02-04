@@ -1,49 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap');
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: arial;
-    display: flex;
-    justify-content: center;
     background: url("https://images.unsplash.com/photo-1518931479438-62470470be9a?q=80&w=1412&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-    background-position: 980px;
+    background-position: 900px;
     background-repeat: repeat;
     background-size: cover;
+}
+h3 {
+    margin: 0 0 .5rem;
+    font-weight: 600;
+    font-size: 1.6rem;
+    font-family: 'Playfair Display', serif;
+}
+
+p {
+    margin: 0;
+    font-size: .95rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-align: justify;
+    background-color: #f0f8ff61;
+    padding: 5px;
+    border-radius: 5px;
+        display: ruby;
+}
+i{
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+.fa{
+    color: rgb(141, 146, 137);
 }
 .container{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 900px;
-        width: 600px;
+        height: 860px;
+        width: max-content;
         border:  solid 2px rgba(128, 128, 128, 0.322);
-        padding: 0 50px 50px 50px;
         margin-top: 10px;
+        margin-left: 20px;
+        padding: 10px;
         border-radius: 10px;
         background: url("images/background.jpg");
         background-size: cover;
+        cursor: default;
+        user-select: none;
+        place-self: center;
       }
+.container_logo{
+    position: absolute;
+    left: 200px;
+    top: 70px;
+}
+strong  a{
+    color: rgb(105, 36, 36);
+    text-decoration: underline;
+    cursor: pointer;
+    transition: all ease-in-out 1s;
+}
+strong a:hover{
+    color: rgb(21, 102, 35);
+    text-decoration: none;
+    background-color:rgb(214, 214, 214);
+    padding: 3px;
+    border-radius: 5px;
+
+}
 .container1{
     height: max-content;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    gap: 100px;
-    margin-top: 80px;
 }
 .container2{
-        height: 90%;
+        height: 60%;
         width: 90%;
-        border:  solid 1px rgba(138, 83, 43, 0.199);
-        border-radius: 20px;
-        padding: 10px;
+        border:  solid 1px rgba(85, 41, 11, 0.116);
+        border-bottom: none;
+        border-radius: 20px 20px 2px 2px;
+        padding: 30px;
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        border-bottom: none;
         
       }
-img{
+.container img{
     height: 150px;
     width: 150px;
     border-radius: 50%;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 .logo{
     width: 90px;
@@ -51,8 +102,15 @@ img{
 }
 .tarif{
     width: 90%;
-    height: 700px;
+    height: auto;
     margin: 30px 10px;
+}
+h1{ 
+    font-weight: bolder;
+    text-align: center;
+    color: rgb(138, 0, 23);
+    font-size: 30px;
+   
 }
 .bouquets{
     width: max-content;
@@ -62,12 +120,17 @@ img{
     color: rgb(128, 61, 72);
     font-weight: bold;
     position: relative;
-    left: 160px;
+    left: 20%;
+}
+h2{
+    text-align: center;
+    color: brown;
+    font-weight: bolder;
+    text-decoration: underline;
 }
 .rose_mixte{
-    position: relative;
-    bottom: 0;
-    color: rgb(255, 230, 0);
+   
+    color: rgba(201, 182, 12, 0.938);
     font-size: 16px;
     font-weight: bolder;
     right: 100px;
@@ -78,9 +141,7 @@ img{
     gap: 30px;
 }
 .images{
-    position: relative;
-    bottom: 670px;
-    right: 260px;
+   
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -88,12 +149,10 @@ img{
     gap: 30px;
 }
 .images2{
-    position: absolute;
-    top: 350px;
-    left: 1140px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin-top: 15%;
     align-items: center;
     gap: 30px;
 }
@@ -107,10 +166,23 @@ img{
 .packet-img img{
     border-radius: 10px;
 }
+
+@media (min-width: calc(200px * 6)) {
+  .container {
+    grid-template-columns: repeat(var(6), 1fr);
+  }
+}
+
+@media (max-width: calc(200px * 2)) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 900px) {
     .container {
-        width: 95vw;
-        height: auto;
+        width: max-content;
+        height: max-content;
         padding: 10px 10px 30px 10px;
     }
     .container1 {
@@ -147,30 +219,152 @@ img{
         border-radius: 10px;
     }
 }
-
-@media (max-width: 600px) {
-    body {
-        padding: 0;
-        background-position: center;
-    }
+@media (max-width: 700px) {
     .container {
-        width: 100vw;
-        min-width: 0;
-        padding: 5px;
-        border-radius: 0;
+        width: 80%;
+        height: 800px;
+        padding: 10px;
+    }
+    .container1 {
+        flex-direction: column;
+        height: max-content;
+        width: 90%;
+        padding: 10px;
+        gap: 20px;
     }
     .container2 {
-        width: 100%;
-        padding: 5px;
-        border-radius: 10px;
+        flex-direction: row;
+        height: max-content;
+        width: 90%;
+        padding: 10px;
+        gap: 20px;
     }
-    img, .logo {
-        width: 80px;
-        height: 80px;
-    }
-    .tarif {
-        width: 100%;
-        height: auto;
-        margin: 10px 0;
-    }
+.images{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    height: 250px;
+}    
+img{
+    height: 100px;
+    width: 100px;
 }
+.tarif{
+    width: 100%;
+    height: 500px;
+    margin: 10px 0;
+
+}
+h1{
+    font-size: 1.1rem;
+  
+}
+.bouquets{
+    left: 0;
+    width: 100%;
+    font-size: 0.8rem;
+    line-height: normal;
+
+}
+.rose_mixte{
+    right: 0;
+    font-size: 0.80rem;
+    gap: 10px;
+}
+}
+@media (max-width: 500px) {
+     .container {
+        place-self: center;
+        margin-top: 50px;
+        width: 80%;
+        height: max-content;
+        padding: 0 20px 0 20px;
+    }
+    .container1 {
+        flex-direction: column;
+        height: max-content;
+        width: 90%;
+        padding: 10px;
+        gap: 0;
+    }
+    .container2 {
+        flex-direction: row;
+        height: 400px;
+        width: 90%;
+        padding: 10px;
+        gap: 10px;
+    }
+    .contact{
+        font-size: 0.8rem;
+
+    }
+    .welcome-box[id="welcome"]{
+        height: max-content;
+    }
+.images{   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    height: 0;
+}   
+.images2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 5%;
+    align-items: center;
+    gap: 60px;
+    height: 40px;
+} 
+img{
+    height: 70px;
+    width: 70px;
+}
+.tarif{
+    width: 100%;
+    height: 500px;
+    margin: 10px 0;
+
+}
+h1{
+    font-size: 0.8rem;
+  
+}
+h2{
+    font-size: 0.6rem;
+}
+.bouquets{
+    left: 0;
+    width: 100%;
+    font-size: 0.7rem;
+    line-height: normal;
+
+}
+.rose_mixte{
+    right: 0;
+    font-size: 0.7rem;
+    gap: 10px;
+    color: rgba(107, 52, 42, 0.87);
+}
+b{
+    background-color: rgba(255, 255, 255, 0.452);
+    border-radius: 5px;
+}
+}
+
+.container {
+  animation: fadeUp 1s both;
+  view-timeline-name: --scroll;
+  animation-timeline: --scroll;
+}
+
+@keyframes fadeUp {
+  from {opacity: 0; transform: translateY(100px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
