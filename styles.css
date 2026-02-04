@@ -55,17 +55,16 @@ i{
 .container_logo{
     position: absolute;
     left: 200px;
-    top: 70px;
+    top: 14px;
 }
 strong  a{
-    color: rgb(105, 36, 36);
-    text-decoration: underline;
+    color: rgb(199 39 39);
     cursor: pointer;
     transition: all ease-in-out 1s;
 }
+}
 strong a:hover{
     color: rgb(21, 102, 35);
-    text-decoration: none;
     background-color:rgb(214, 214, 214);
     padding: 3px;
     border-radius: 5px;
@@ -92,7 +91,7 @@ strong a:hover{
 .container img{
     height: 150px;
     width: 150px;
-    border-radius: 50%;
+    border-radius: 30%;
     user-select: none;
     -webkit-user-drag: none;
 }
