@@ -12,7 +12,7 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 900px;
+        height: 1000px;
         width: max-content;
         border:  solid 2px rgba(128, 128, 128, 0.322);
         margin-top: 10px;
