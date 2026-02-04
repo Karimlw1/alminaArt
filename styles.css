@@ -57,6 +57,10 @@ i{
     left: 200px;
     top: 14px;
 }
+.container_logo .logo{
+    width: 90px;
+    height: 90px;
+}
 strong  a{
     color: rgb(199 39 39);
     cursor: pointer;
@@ -88,6 +92,7 @@ strong a:hover{
         border-bottom: none;
         
       }
+
 .container img{
     height: 150px;
     width: 150px;
@@ -95,10 +100,7 @@ strong a:hover{
     user-select: none;
     -webkit-user-drag: none;
 }
-.logo{
-    width: 90px;
-    height: 90px;
-}
+
 .tarif{
     width: 90%;
     height: auto;
